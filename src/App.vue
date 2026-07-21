@@ -17,10 +17,10 @@ const learner = {
 const completedLessons = ref(0)
 
 const courses = [
-  "HTML Fundamentals",
-  "CSS Essentials",
-  "JavaScript Basics",
-  "Vue.js 3",
+  "Programming",
+  "Information Management",
+  "JavaScript ",
+  "Domain Course",
   "Database Management"
 ]
 
@@ -33,6 +33,8 @@ function undoLesson() {
     completedLessons.value--
   }
 }
+
+const image =ref("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvgultlCxhNVYkN-aM36JMZB44FI-vblwCAGsbzTkJNQ&s=10")
 </script>
 
 <template>
@@ -50,17 +52,11 @@ function undoLesson() {
   <button @click="completeLesson">Complete</button>
   <button @click="undoLesson">Undo</button>
 
-  <br><br>
-
-  <img
-    :src="courseImage"
-    width="350"
-  />
-
-  <CourseList
-    :courses="courses"
-  />
 
   
+  <CourseList
+  :courses="courses"/>
+
+   <img :src="image">
   
 </template>
