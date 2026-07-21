@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "name": "dc301-prelim-garcia",
-=======
   "name": "garcia-dc301-prelim",
->>>>>>> 9858b60 (Initial Vue Project Setup)
   "private": true,
   "version": "0.0.0",
   "type": "module",
