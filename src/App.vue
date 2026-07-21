@@ -1,8 +1,8 @@
 <script setup>
 import { ref } from 'vue'
 
-import learnerProfile from './components/LearnerProfile.vue'
-import courseList from './components/CourseList.vue'
+import learnerProfile from './components/learnerProfile.vue'
+import courseList from './components/courseList.vue'
 
 import courseImage from './assets/online-course.jpg'
 
@@ -10,7 +10,7 @@ const learner = {
   name: "Jeneza Garcia",
   program: "BS Information Technology",
   track: "Web Development",
-  studentID: "2024-00001",
+  studentID: "18549",
   status: true
 }
 
@@ -61,15 +61,6 @@ function undoLesson() {
     :courses="courses"
   />
 
-  <h3>
-    Course Status:
-    <span :style="{ color: learner.status ? 'green' : 'red' }">
-      {{ learner.status ? 'In Progress' : 'Completed' }}
-    </span>
-  </h3>
-
-  <h3>
-    Learner Level:
-    {{ courses.length >= 5 ? 'Advanced Learner' : 'Beginner Learner' }}
-  </h3>
+  
+  
 </template>
